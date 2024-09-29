@@ -31,7 +31,7 @@ def PrintTextEdit():
     serial.write(("*" + ui.textEdit.toPlainText() + "*").encode())
 
 def PrintPushButton():
-    serial.write(("0PushButton0").encode())
+    serial.write(("0").encode())
 
 def PrintHorizontalSlider(value):
     serial.write(("-" + str(value) + "-").encode())
